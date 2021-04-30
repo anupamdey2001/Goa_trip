@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.container{
+    max-width: 80%;
+    /* background-color: rgb(186, 137, 231); */
+    /* padding: 78px; */
+    margin: auto;
+}
+.container h1, p{
+    /* width: 80%; */
+    text-align: center;
+    /* margin: auto; */
+}
+.display{
+    font-size: 42px;
+    font-family: 'Sriracha', cursive;
+}
+.lead{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.submitMsg{
+    font-family: 'Sriracha', cursive;
+    font-size: 20px;
+    color: #008000;
+}
+input, textarea{
+    display: block;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    outline: none;
+    width: 80%;
+    padding: 7px;
+    margin: 11px auto;
+}
+
+.btn{
+    font-family: 'Roboto Condensed', sans-serif;
+    display:block;
+    margin: 16px auto;
+    width: 10%;
+    padding: 8px 6px;
+    color: #fff;
+    background-color: rgb(215, 83, 233);
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.bg{
+    width: 100%;
+    height: 780px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+.LOGO{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+}
+footer{
+    font-family: 'Roboto Condensed', sans-serif;
+padding: 3px;
+font-size: 20px;
+   background-color: #000;
+   color: #fff;
+}
