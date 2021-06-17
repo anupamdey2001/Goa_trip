@@ -12,7 +12,6 @@ if (isset($_POST['Name'])) {
     if (!$con) {
         die("Connection Error" . mysqli_connect_error());
     }
-    // echo "Successfully connect to db";
 
     //collect post variables
     $Name = $_POST['Name'];
@@ -51,7 +50,7 @@ if (isset($_POST['Name'])) {
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Welcome to Travel Form</title>
+    <title>Welcome to Goa Travel Form</title>
 </head>
 
 <body onload='document.form1.text1.focus()'>
@@ -76,7 +75,7 @@ if (isset($_POST['Name'])) {
                 <input type="text" name="Gender" id="Gender" placeholder="Enter your Gender" required>
             </div>
             <div class="form-group">
-                <input type="tel" name="Phone" id="Phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                <input type="tel" name="Phone" id="Phone" placeholder="Enter your phone number" required>
             </div>
             <div class="form-group">
                 <input type="email" name="Email" id="Email" placeholder="Enter your Email id" required>
@@ -85,17 +84,14 @@ if (isset($_POST['Name'])) {
                 <textarea name="others" id="others" cols="30" rows="10" placeholder="Enter your Message Here..."></textarea>
             </div>
             <button class="btn" onclick="ValidateEmail(document.form1.text1)">Submit</button>
-            <!-- <button class="btn">Reset</button> -->
         </form>
     </div>
     <footer>
         <center>
             <h3>Developed By : Anupam Dey</h3>
+            <h4>Copyright &copy; 2021 Anupam Dey</h4>
         </center>
     </footer>
-    <!-- INSERT INTO `trip` (`Serial No`, `Name`, `Age`, `Gender`, `Phone`, `Email`, `others`, `Registration_time`) VALUES
-    ('1', 'text', '18', 'male', '9123938387', 'anupam.d2001@gmail.com', 'text message', current_timestamp()); -->
     <script src="js/script.js"></script>
 </body>
-
 </html>
